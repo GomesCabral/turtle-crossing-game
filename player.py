@@ -10,10 +10,10 @@ class Player(Turtle):
         super().__init__()
         self.penup()
         self.shape('turtle')
-        self.color('black')
         self.goto(STARTING_POSITION)
-        self.left(90)
+        self.setheading(90)
 
     def go_up(self):
-        new_y = self.ycor() + 20
-        self.goto(self.xcor(), new_y)
+        #new_y = self.ycor() + 10
+        #self.goto(self.xcor(), new_y)
+        self.forward(MOVE_DISTANCE)
